@@ -1,52 +1,27 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        /*int size = nums.size() ;
-        int max_frequency = 0 ; 
-        int a ;
-        for ( int i = 0 ; i < size ; i++ ) { 
+        int n = nums.size() ;
+        int e = nums[0];
+        for ( int i = 0 ; i < n ; i++ ) {
+            int count = 1 ;
             int frequency = 0 ;
-            for ( int j = 0 ; j < size ; j++ ) { 
-                if ( nums [ i ] == nums [ j ] ) { 
-                    frequency++ ;
+            for ( int j = 0 ; j < i ; j++ ) { 
+                if (nums[i] == nums[j]){ 
+                    count++ ;
                 }
             } 
-            if ( frequency > size / 2 ) { 
-                return nums [ i ] ;
-            } 
-        }
-        return 0 ;*/ 
-        /*int n = nums.size() ;
-        sort(nums.begin(),nums.end());
-        int e = nums[0] ;
-        int frequency = 1 ;
-        for ( int i = 1 ; i < n ; i++ ) {  
-            if ( nums[i] == e ) { 
-                frequency++ ;
-            } 
-            else { 
-                e = nums[i] ; 
-                frequency = 1 ; 
-            }
-            if ( frequency > n/2 ) { 
-                return e ;
-            } 
-        } 
-        return e ; */
-        int n = nums.size() ; 
-        int ans = 0 ;
-        int frequency = 0 ;
-        for ( int i = 0 ; i < n ; i++ ) {
-            if ( frequency == 0 ) { 
-                ans = nums[i] ;
-            }
-            if (ans == nums[i]) { 
-                frequency++ ;
-            }
-            else { 
-                frequency--;
+            if (count == 1 ) { 
+                for ( int k = 0 ; k < n ; k++ ) { 
+                    if ( nums[i]==nums[k]) { 
+                        frequency++ ;
+                    }
+                }
+                if (frequency > n/2 ) { 
+                    return nums[i] ;
+                }
             }
         }
-        return ans ;
+        return e ;
     }
 };
