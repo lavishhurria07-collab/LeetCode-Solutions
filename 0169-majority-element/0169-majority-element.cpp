@@ -16,7 +16,7 @@ public:
             } 
         }
         return 0 ;*/ 
-        int n = nums.size() ;
+        /*int n = nums.size() ;
         sort(nums.begin(),nums.end());
         int e = nums[0] ;
         int frequency = 1 ;
@@ -32,6 +32,21 @@ public:
                 return e ;
             } 
         } 
-        return e ; 
+        return e ; */
+        int n = nums.size() ; 
+        int ans = 0 ;
+        int frequency = 0 ;
+        for ( int i = 0 ; i < n ; i++ ) {
+            if ( frequency == 0 ) { 
+                ans = nums[i] ;
+            }
+            if (ans == nums[i]) { 
+                frequency++ ;
+            }
+            else { 
+                frequency--;
+            }
+        }
+        return ans ;
     }
 };
