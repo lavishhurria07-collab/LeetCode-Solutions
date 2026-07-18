@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0009-palindrome-number) |
+| [0050-powx-n](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0050-powx-n) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 ## Array
 |  |
@@ -83,4 +84,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2011-final-value-of-variable-after-performing-operations) |
+## Recursion
+|  |
+| ------- |
+| [0050-powx-n](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0050-powx-n) |
 <!---LeetCode Topics End-->
