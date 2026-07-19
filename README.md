@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0050-powx-n) |
 | [0258-add-digits](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0258-add-digits) |
 | [0507-perfect-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0507-perfect-number) |
+| [0728-self-dividing-numbers](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0728-self-dividing-numbers) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 | [2469-convert-the-temperature](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2469-convert-the-temperature) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
