@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0728-self-dividing-numbers](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0728-self-dividing-numbers) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 | [2469-convert-the-temperature](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2469-convert-the-temperature) |
+| [2544-alternating-digit-sum](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2544-alternating-digit-sum) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Array
 |  |
