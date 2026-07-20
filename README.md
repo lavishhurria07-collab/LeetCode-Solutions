@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0009-palindrome-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0009-palindrome-number) |
 | [0050-powx-n](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0050-powx-n) |
+| [0231-power-of-two](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0231-power-of-two) |
 | [0258-add-digits](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0258-add-digits) |
 | [0263-ugly-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0263-ugly-number) |
 | [0507-perfect-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0507-perfect-number) |
@@ -40,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0136-single-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0136-single-number) |
+| [0231-power-of-two](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0231-power-of-two) |
 ## Simulation
 |  |
 | ------- |
@@ -99,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0050-powx-n](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0050-powx-n) |
+| [0231-power-of-two](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0231-power-of-two) |
 ## Greedy
 |  |
 | ------- |
