@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0136-single-number) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0169-majority-element) |
+| [0238-product-of-array-except-self](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [0704-binary-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1431-kids-with-the-greatest-number-of-candies) |
@@ -55,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0238-product-of-array-except-self](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [1480-running-sum-of-1d-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1480-running-sum-of-1d-array) |
 ## Hash Table
 |  |
