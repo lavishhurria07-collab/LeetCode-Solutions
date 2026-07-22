@@ -5,7 +5,7 @@ public:
         int n = nums.size() ;
         int end = n - 1 ;
         while (end >= start ) { 
-            int mid = ( start + end ) / 2 ;
+            int mid = start + ( end - start ) / 2 ;
             if ( nums[mid] < target ) { 
                 start = mid + 1 ;
             }
