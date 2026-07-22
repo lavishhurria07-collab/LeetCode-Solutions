@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0231-power-of-two) |
 | [0258-add-digits](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0258-add-digits) |
 | [0263-ugly-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0263-ugly-number) |
+| [0367-valid-perfect-square](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0367-valid-perfect-square) |
 | [0507-perfect-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0507-perfect-number) |
 | [0728-self-dividing-numbers](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0728-self-dividing-numbers) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
@@ -104,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0069-sqrtx) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0278-first-bad-version](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0278-first-bad-version) |
+| [0367-valid-perfect-square](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0367-valid-perfect-square) |
 | [0374-guess-number-higher-or-lower](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 | [0704-binary-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2824-count-pairs-whose-sum-is-less-than-target) |
