@@ -90,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0169-majority-element) |
 | [0242-valid-anagram](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0242-valid-anagram) |
+| [0383-ransom-note](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 ## Sorting
@@ -106,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0169-majority-element) |
+| [0383-ransom-note](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 ## Divide and Conquer
@@ -179,6 +181,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0344-reverse-string](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
+| [0383-ransom-note](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0392-is-subsequence) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0680-valid-palindrome-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0680-valid-palindrome-ii) |
