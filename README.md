@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
+| [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 ## Sorting
 |  |
 | ------- |
@@ -137,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
+| [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -225,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0557-reverse-words-in-a-string-iii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0680-valid-palindrome-ii) |
+| [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2011-final-value-of-variable-after-performing-operations) |
 ## Recursion
 |  |
@@ -304,4 +307,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [1004-max-consecutive-ones-iii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
+| [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 <!---LeetCode Topics End-->
