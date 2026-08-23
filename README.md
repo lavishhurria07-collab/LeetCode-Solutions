@@ -55,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0283-move-zeroes) |
 | [0540-single-element-in-a-sorted-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0540-single-element-in-a-sorted-array) |
+| [0561-array-partition](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0561-array-partition) |
 | [0704-binary-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0875-koko-eating-bananas](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0875-koko-eating-bananas) |
@@ -136,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0389-find-the-difference](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0389-find-the-difference) |
 | [0451-sort-characters-by-frequency](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
+| [0561-array-partition](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0561-array-partition) |
 | [0905-sort-array-by-parity](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0905-sort-array-by-parity) |
 | [0922-sort-array-by-parity-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0922-sort-array-by-parity-ii) |
 | [0977-squares-of-a-sorted-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0977-squares-of-a-sorted-array) |
@@ -149,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0387-first-unique-character-in-a-string) |
 | [0451-sort-characters-by-frequency](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
+| [0561-array-partition](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0561-array-partition) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
@@ -256,6 +259,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0011-container-with-most-water) |
+| [0561-array-partition](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0561-array-partition) |
 | [0680-valid-palindrome-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0680-valid-palindrome-ii) |
 ## Number Theory
 |  |
