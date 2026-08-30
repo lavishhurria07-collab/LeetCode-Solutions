@@ -273,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0050-powx-n](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0050-powx-n) |
+| [0206-reverse-linked-list](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0206-reverse-linked-list) |
 | [0231-power-of-two](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0231-power-of-two) |
 ## Greedy
 |  |
@@ -359,4 +360,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0075-sort-colors](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0075-sort-colors) |
 | [1051-height-checker](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1051-height-checker) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
