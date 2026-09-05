@@ -19,25 +19,25 @@ public:
         if ( head == NULL ) { 
             return NULL ; 
         }
-        unordered_map<Node*,Node*>map ; 
         Node *newhead = new Node(head->val) ; 
         Node *oldtemp = head -> next ; 
         Node *newtemp = newhead ; 
+        unordered_map <Node*,Node*> map ; 
         map[head] = newhead ; 
         while ( oldtemp != NULL ) { 
             Node *copynode = new Node(oldtemp->val) ; 
-            map[oldtemp] = copynode ;
-            newtemp -> next = copynode ;  
+            map[oldtemp] = copynode ; 
+            newtemp -> next = copynode ; 
             oldtemp = oldtemp -> next ; 
             newtemp = newtemp -> next ; 
         }
         oldtemp = head ; 
         newtemp = newhead ; 
         while ( oldtemp != NULL ) { 
-            newtemp->random = map[oldtemp->random] ; 
-            oldtemp = oldtemp -> next ; 
+            newtemp -> random = map[oldtemp->random] ; 
             newtemp = newtemp -> next ; 
+            oldtemp = oldtemp -> next ; 
         }
         return newhead ; 
-    }
+    } 
 };
