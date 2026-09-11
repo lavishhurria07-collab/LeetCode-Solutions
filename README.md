@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0367-valid-perfect-square](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0367-valid-perfect-square) |
 | [0507-perfect-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0507-perfect-number) |
+| [0509-fibonacci-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
 | [0728-self-dividing-numbers](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0728-self-dividing-numbers) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
@@ -190,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0392-is-subsequence](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0392-is-subsequence) |
+| [0509-fibonacci-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
 ## Two Pointers
 |  |
 | ------- |
@@ -296,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0206-reverse-linked-list](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0206-reverse-linked-list) |
 | [0231-power-of-two](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0234-palindrome-linked-list) |
+| [0509-fibonacci-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
 ## Greedy
 |  |
 | ------- |
@@ -417,4 +420,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0707-design-linked-list](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0707-design-linked-list) |
+## Memoization
+|  |
+| ------- |
+| [0509-fibonacci-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
 <!---LeetCode Topics End-->
