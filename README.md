@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2469-convert-the-temperature](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2469-convert-the-temperature) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2520-count-the-digits-that-divide-a-number) |
 | [2544-alternating-digit-sum](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2544-alternating-digit-sum) |
+| [2965-find-missing-and-repeated-values](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2965-find-missing-and-repeated-values) |
 | [3622-check-divisibility-by-digit-sum-and-product](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/3622-check-divisibility-by-digit-sum-and-product) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Array
@@ -91,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [2187-minimum-time-to-complete-trips](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2187-minimum-time-to-complete-trips) |
 | [2824-count-pairs-whose-sum-is-less-than-target](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2824-count-pairs-whose-sum-is-less-than-target) |
+| [2965-find-missing-and-repeated-values](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2965-find-missing-and-repeated-values) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -147,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 | [2351-first-letter-to-appear-twice](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2351-first-letter-to-appear-twice) |
+| [2965-find-missing-and-repeated-values](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2965-find-missing-and-repeated-values) |
 ## Sorting
 |  |
 | ------- |
@@ -326,6 +329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0240-search-a-2d-matrix-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
+| [2965-find-missing-and-repeated-values](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2965-find-missing-and-repeated-values) |
 ## Stack
 |  |
 | ------- |
