@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0088-merge-sorted-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0090-subsets-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -280,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0058-length-of-last-word) |
 | [0076-minimum-window-substring](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0205-isomorphic-strings) |
@@ -335,6 +337,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0037-sudoku-solver) |
 | [0074-search-a-2d-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0240-search-a-2d-matrix-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [2965-find-missing-and-repeated-values](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2965-find-missing-and-repeated-values) |
 ## Stack
@@ -448,6 +451,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0051-n-queens](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0052-n-queens-ii) |
 | [0078-subsets](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0090-subsets-ii) |
 ## Boyer–Moore Majority Vote Algorithm
 |  |
@@ -463,4 +467,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0037-sudoku-solver) |
+## Depth-First Search
+|  |
+| ------- |
+| [0079-word-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
