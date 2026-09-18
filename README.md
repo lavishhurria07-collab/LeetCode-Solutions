@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
 | [0046-permutations](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0046-permutations) |
 | [0049-group-anagrams](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0049-group-anagrams) |
@@ -449,6 +450,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0037-sudoku-solver](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0052-n-queens-ii) |
