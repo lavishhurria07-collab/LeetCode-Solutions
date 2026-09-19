@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 | [1552-magnetic-force-between-two-balls](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
+| [1672-richest-customer-wealth](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1672-richest-customer-wealth) |
 | [1920-build-array-from-permutation](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1929-concatenation-of-array) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
@@ -342,6 +343,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0240-search-a-2d-matrix-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
+| [1672-richest-customer-wealth](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1672-richest-customer-wealth) |
 | [2965-find-missing-and-repeated-values](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2965-find-missing-and-repeated-values) |
 ## Stack
 |  |
