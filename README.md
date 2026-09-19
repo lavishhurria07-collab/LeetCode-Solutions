@@ -95,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
 | [1552-magnetic-force-between-two-balls](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1552-magnetic-force-between-two-balls) |
 | [1672-richest-customer-wealth](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1672-richest-customer-wealth) |
+| [1732-find-the-highest-altitude](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
 | [1773-count-items-matching-a-rule](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1773-count-items-matching-a-rule) |
 | [1920-build-array-from-permutation](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1929-concatenation-of-array) |
@@ -129,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [1004-max-consecutive-ones-iii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1480-running-sum-of-1d-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1480-running-sum-of-1d-array) |
+| [1732-find-the-highest-altitude](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
 ## Hash Table
 |  |
 | ------- |
