@@ -159,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
+| [1832-check-if-the-sentence-is-pangram](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1832-check-if-the-sentence-is-pangram) |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 | [2351-first-letter-to-appear-twice](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2351-first-letter-to-appear-twice) |
 | [2965-find-missing-and-repeated-values](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2965-find-missing-and-repeated-values) |
@@ -305,6 +306,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0557-reverse-words-in-a-string-iii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0680-valid-palindrome-ii) |
+| [1832-check-if-the-sentence-is-pangram](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1832-check-if-the-sentence-is-pangram) |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [2351-first-letter-to-appear-twice](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2351-first-letter-to-appear-twice) |
