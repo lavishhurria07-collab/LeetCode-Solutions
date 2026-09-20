@@ -104,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1672-richest-customer-wealth](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1672-richest-customer-wealth) |
 | [1732-find-the-highest-altitude](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
 | [1773-count-items-matching-a-rule](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1773-count-items-matching-a-rule) |
+| [1854-maximum-population-year](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1854-maximum-population-year) |
 | [1920-build-array-from-permutation](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1929-concatenation-of-array) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
@@ -141,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1004-max-consecutive-ones-iii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1480-running-sum-of-1d-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1480-running-sum-of-1d-array) |
 | [1732-find-the-highest-altitude](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
+| [1854-maximum-population-year](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1854-maximum-population-year) |
 ## Hash Table
 |  |
 | ------- |
@@ -209,6 +211,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1051-height-checker](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1051-height-checker) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1512-number-of-good-pairs](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1512-number-of-good-pairs) |
+| [1854-maximum-population-year](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1854-maximum-population-year) |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 | [2351-first-letter-to-appear-twice](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2351-first-letter-to-appear-twice) |
 ## Divide and Conquer
