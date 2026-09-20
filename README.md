@@ -135,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1920-build-array-from-permutation](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1929-concatenation-of-array) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2011-final-value-of-variable-after-performing-operations) |
+| [3498-reverse-degree-of-a-string](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/3498-reverse-degree-of-a-string) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -329,6 +330,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1876-substrings-of-size-three-with-distinct-characters) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [2351-first-letter-to-appear-twice](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/2351-first-letter-to-appear-twice) |
+| [3498-reverse-degree-of-a-string](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/3498-reverse-degree-of-a-string) |
 ## Recursion
 |  |
 | ------- |
