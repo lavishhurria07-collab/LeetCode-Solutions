@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0540-single-element-in-a-sorted-array](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0561-array-partition](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0561-array-partition) |
+| [0566-reshape-the-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0566-reshape-the-matrix) |
 | [0704-binary-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0832-flipping-an-image](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0832-flipping-an-image) |
@@ -132,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0258-add-digits](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0258-add-digits) |
+| [0566-reshape-the-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0566-reshape-the-matrix) |
 | [0832-flipping-an-image](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0832-flipping-an-image) |
 | [0867-transpose-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0867-transpose-matrix) |
 | [1389-create-target-array-in-the-given-order](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1389-create-target-array-in-the-given-order) |
@@ -371,6 +373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0240-search-a-2d-matrix-ii](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
+| [0566-reshape-the-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0566-reshape-the-matrix) |
 | [0832-flipping-an-image](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0832-flipping-an-image) |
 | [0867-transpose-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/0867-transpose-matrix) |
 | [1380-lucky-numbers-in-a-matrix](https://github.com/lavishhurria07-collab/LeetCode-Solutions/tree/master/1380-lucky-numbers-in-a-matrix) |
