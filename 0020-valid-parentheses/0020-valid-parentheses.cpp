@@ -1,52 +1,37 @@
 class Solution {
 public:
-    bool isValid(string s) {
-        vector<char> ans ; 
+    bool isValid(string s) { 
+        vector <char> stack ; 
+        int top = -1 ; 
         if ( s.size() == 1 ) { 
             return false ; 
         }
-        if ( s[0] == ')' || s[0] == '}' || s[0] == ']') { 
-            return false ; 
-        }
         for ( int i = 0 ; i < s.size() ; i++ ) { 
-            if ( s[i] == '(' || s[i] == '{' || s[i] == '[' ) { 
-                ans.push_back(s[i]) ;  
+            if ( stack.size() == 0 && ( s[i] == ')' || s[i] == '}' || s[i] == ']' ) ) { 
+                return false ; 
             }
-            if ( s[i] == ')' ) { 
-                if ( ans.size() == 0 ) { 
-                    return false ; 
-                }
-                if ( ans.back() != '(' ) { 
-                    return false ; 
-                }
-                else { 
-                    ans.pop_back() ; 
-                }
+            if ( s[i] == '(' || s[i] == '[' || s[i] == '{' ) { 
+                top++ ; 
+                stack.push_back(s[i]) ; 
+                continue ; 
             }
-            if ( s[i] == '}' ) { 
-                if ( ans.size() == 0 ) { 
-                    return false ; 
-                }
-                if ( ans.back() != '{' ) { 
-                    return false ; 
-                }
-                else { 
-                    ans.pop_back() ; 
-                }
+            else if ( s[i] == ')' && stack[top] == '(' ) { 
+                stack.pop_back() ; 
+                top-- ; 
             }
-            if ( s[i] == ']' ) { 
-                if ( ans.size() == 0 ) { 
-                    return false ; 
-                }
-                if ( ans.back() != '[' ) { 
-                    return false ; 
-                }
-                else { 
-                    ans.pop_back() ; 
-                }
+            else if ( s[i] == '}' && stack[top] == '{' ) { 
+                stack.pop_back() ; 
+                top-- ; 
             }
-        } 
-        if ( ans.size() == 0 ) { 
+            else if ( s[i] == ']' && stack[top] == '['  ) { 
+                stack.pop_back() ; 
+                top-- ; 
+            }
+            else { 
+                return false ; 
+            }
+        }
+        if ( top == -1 ) { 
             return true ; 
         }
         return false ; 
