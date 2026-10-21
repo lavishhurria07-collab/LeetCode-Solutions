@@ -1,23 +1,30 @@
 class Solution {
-public:
+public: 
+    double mypower(double x , long long n ) { 
+        if ( n == 1 ) { 
+            return x ; 
+        }
+        if ( n == 0 ) { 
+            return 1 ; 
+        }
+        double half = mypower(x,n/2) ; 
+        if ( n % 2 == 0 ) { 
+            return half * half ; 
+        }
+        if ( n % 2 == 1 ) { 
+            return half * half * x ; 
+        }
+        return half * half ; 
+    }
     double myPow(double x, int n) {
-        double ans = 1 ;
-        long long power = n ;
-        if ( power < 0 ) { 
-            x= 1/x ;
-            power = - power ;
+        if ( n >= 0 ) { 
+            long long m = (long long) n ; 
+            return mypower(x,m) ; 
         }
-        while ( power > 0 ) { 
-            int a = power % 2 ; 
-            if ( a == 1 ) { 
-                ans = ans * x ;
-                x = x * x ;
-            }
-            else { 
-                x = x * x ;
-            }
-            power = power / 2 ;
+        else { 
+            long long m = - ( long long ) n ; 
+            return 1 / mypower(x,m) ; 
         }
-        return ans ;
+        return 0.00000 ; 
     }
 };
