@@ -1,43 +1,45 @@
 class MyQueue {
 private : 
-    int stack1[100] ; 
-    int top1 = -1 ; 
-    int top2 = -1 ;
-    int stack2[100] ; 
+    stack <int> ans1 ; 
+    stack <int> ans2 ; 
 public:
     MyQueue() {
-
     }
     void push(int x) { 
-        top1++ ; 
-        stack1[top1] = x ; 
+        ans1.push(x) ; 
     }
     int pop() { 
-        if ( top2 == -1 ) { 
-            while ( top1 >= 0 ) { 
-                int val = stack1[top1] ; 
-                top2++ ; 
-                stack2[top2] = val ; 
-                top1-- ;
-            }
-        } 
-        int val = stack2[top2] ; 
-        top2-- ; 
-        return val ; 
-    }
-    int peek() {
-        if ( top2 == -1 ) { 
-            while ( top1 >= 0 ) { 
-                int val = stack1[top1] ; 
-                top2++ ; 
-                stack2[top2] = val ; 
-                top1-- ;
+        int n = ans1.size() ; 
+        if ( ans2.empty() ) { 
+            for ( int i = 0 ; i < n ; i++ ) { 
+                int a = ans1.top() ; 
+                ans2.push(a) ; 
+                ans1.pop() ; 
             }
         }
-        return stack2[top2] ; 
+        int b = ans2.top() ;  
+        ans2.pop() ; 
+        return b ; 
+    }
+    int peek() {
+        if ( ans1.empty() ) { 
+            return ans2.top() ; 
+        } 
+        else if ( ans2.empty() ) {  
+            int n = ans1.size() ; 
+            for ( int i = 0 ; i < n ; i++ ) { 
+                int a = ans1.top() ; 
+                ans2.push(a) ; 
+                ans1.pop() ; 
+            }
+            return ans2.top() ; 
+        }
+        else { 
+            return ans2.top() ; 
+        }
     }
     bool empty() {
-        if ( top2 == -1 && top1 == -1 ) { 
+        if ( ans1.empty() && ans2.empty() ) { 
             return true ; 
         }
         return false ; 
