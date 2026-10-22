@@ -1,26 +1,26 @@
 class Solution {
 public:
-    string removeDuplicates(string s) {
-        vector <char> stack ; 
+    string removeDuplicates(string s) { 
+        vector <char> ans ; 
         int top = -1 ; 
-        for ( int i = 0 ; i < s.size() ; i++ ) { 
-            if ( top != -1 && stack[top] != s[i] ) {  
-                top++ ; 
-                stack.push_back(s[i]) ;
+        for ( int  i = 0 ; i < s.size() ; i++ ) { 
+            if ( top == -1 ) { 
+                top = 0 ; 
+                ans.push_back(s[i]) ; 
             }
-            else if ( top == -1 ) { 
+            else if ( ans[top] != s[i] ) { 
                 top++ ; 
-                stack.push_back(s[i]) ;
+                ans.push_back(s[i]) ; 
             }
-            else if ( stack[top] == s[i] ) { 
-                stack.pop_back() ; 
+            else if ( ans[top] == s[i] ) { 
                 top-- ; 
+                ans.pop_back() ; 
             }
         }
-        string ans = "" ; 
-        for ( int i = 0 ; i < stack.size() ; i++ ) { 
-            ans = ans + stack[i] ; 
+        string answer ; 
+        for ( int i = 0 ; i < ans.size() ; i++ ) { 
+            answer = answer + ans[i] ; 
         }
-        return ans ; 
+        return answer ; 
     }
 };
