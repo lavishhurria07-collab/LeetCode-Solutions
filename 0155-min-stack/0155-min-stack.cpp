@@ -1,37 +1,40 @@
-class MinStack {
+class MinStack { 
 private : 
-    int ans[30000] ; 
-    int min_stack[30000] ; 
-    int top1 = -1 ; 
-    int min_top = -1 ; 
-public:
+    vector <int> ans ; 
+    vector <int> min ; 
+    int top1 ; 
+    int top2 ; 
+public :
     MinStack() { 
+        top1 = -1 ; 
+        top2 = -1 ; 
     }  
     void push(int value) {
-        int a = value ; 
         top1++ ; 
-        ans[top1] = a ; 
-        if ( min_top == -1 ) { 
-            min_top++ ; 
-            min_stack[min_top] = a ; 
+        ans.push_back(value) ; 
+        if ( top2 == -1 ) { 
+            top2++ ; 
+            min.push_back(value) ; 
         }
-        else if ( min_stack[min_top] >= a ) { 
-            min_top++ ; 
-            min_stack[min_top] = a ; 
+        else if ( min[top2] >= value ) { 
+            top2++ ; 
+            min.push_back(value) ; 
         }
     }
     void pop() {
-        int b = ans[top1] ; 
+        int a = ans[top1] ; 
         top1-- ; 
-        if ( min_stack[min_top] == b ) { 
-            min_top-- ; 
+        ans.pop_back() ; 
+        if ( a == min[top2] ) { 
+            top2-- ; 
+            min.pop_back() ; 
         }
     }
-    int top() {
-        return ans[top1] ;    
+    int top() { 
+        return ans[top1] ; 
     }
     int getMin() {
-        return min_stack[min_top] ;    
+        return min[top2] ; 
     }
 };
 
