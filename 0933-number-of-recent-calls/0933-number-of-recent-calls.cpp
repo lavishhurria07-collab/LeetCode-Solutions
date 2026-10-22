@@ -1,15 +1,14 @@
-class RecentCounter {
+class RecentCounter { 
 private : 
     queue <int> ans ; 
 public :
     RecentCounter() {
-        
     }
     
     int ping(int t) {
         ans.push(t) ; 
         int starting_range = t - 3000 ; 
-        while  ( ans.front() < starting_range ) { 
+        while ( ans.front() < starting_range ) { 
             ans.pop() ; 
         }
         return ans.size() ; 
