@@ -1,47 +1,45 @@
 class MyCircularQueue { 
 private : 
-    int size ; 
-    int rear ;
-    int front ;  
+    vector <int> answer ; 
+    int front ; 
+    int rear ; 
     int count ; 
-    vector <int> ans ; 
+    int size ; 
 public:
     MyCircularQueue(int k) {
         size = k ; 
-        count = 0 ; 
-        rear = -1 ; 
-        ans.resize(k) ; // help li thi .  
+        answer.resize(k) ; 
         front = -1 ; 
+        rear = -1 ; 
+        count = 0 ; 
     }
     
     bool enQueue(int value) {
         if ( count == size ) { 
             return false ; 
         }
-        else if ( rear == -1 && front == -1 ) { 
+        else if ( rear == -1 && front == -1 ) {  
             rear = 0 ; 
             front = 0 ; 
+            answer[rear] = value ; 
             count++ ; 
-            ans[rear] = value ; 
         }
         else { 
-            rear = ( rear + 1 ) % size ;
+            rear = ( rear + 1 ) % size ; 
+            answer[rear] = value ; 
             count++ ; 
-            ans[rear] = value ; 
         }
         return true ; 
     }
     
     bool deQueue() {
-        if ( front == -1 ) { 
+        if ( front == -1 && rear == -1 ) { 
             return false ; 
         }
-        else if ( front == rear ) { 
-            front = -1 ; 
-            rear = -1 ; 
-            count-- ; 
+        else if ( count == 0 ) { 
+            return false ; 
         }
-        else {  
+        else { 
             front = ( front + 1 ) % size ; 
             count-- ; 
         }
@@ -52,8 +50,11 @@ public:
         if ( front == -1 ) { 
             return -1 ; 
         }
+        else if ( count == 0 ) { 
+            return -1 ; 
+        }
         else { 
-            return ans[front] ; 
+            return answer[front] ; 
         }
     }
     
@@ -61,27 +62,26 @@ public:
         if ( rear == -1 ) { 
             return -1 ; 
         }
+        else if ( count == 0 ) { 
+            return -1 ; 
+        }
         else { 
-            return ans[rear] ; 
+            return answer[rear] ; 
         }
     }
     
     bool isEmpty() {
-        if ( front == -1 ) { 
+        if ( count == 0 ) { 
             return true ; 
         }
-        else { 
-            return false ; 
-        }
+        return false ; 
     }
     
     bool isFull() {
-        if ( count == size )  { 
+        if ( count == size ) { 
             return true ; 
         }
-        else { 
-            return false ; 
-        }
+        return false ; 
     }
 };
 
