@@ -10,21 +10,21 @@
  * };
  */
 class Solution {
-public:
-    void HelperFunction(TreeNode* root , int &max_depth ) {
+public: 
+    void Helper_function ( TreeNode* root , int &max_depth ) { 
         if ( root == NULL ) { 
             max_depth = 0 ; 
             return ; 
         }
-        queue<TreeNode*> q ; 
+        queue <TreeNode*> q ; 
         q.push(root) ; 
         q.push(NULL) ; 
         while ( q.size() > 0 ) { 
-            TreeNode *curr = q.front() ; 
+            TreeNode* curr = q.front() ;  
             q.pop() ; 
             if ( curr == NULL && q.size() != 0 ) { 
-                q.push(NULL) ; 
                 max_depth++ ; 
+                q.push(NULL) ; 
                 continue ; 
             }
             else if ( curr == NULL && q.size() == 0 ) { 
@@ -33,14 +33,14 @@ public:
             if ( curr->left != NULL ) { 
                 q.push(curr->left) ; 
             }
-            if ( curr -> right != NULL ) { 
+            if ( curr->right != NULL ) { 
                 q.push(curr->right) ; 
             }
         }
     }
     int maxDepth(TreeNode* root) {
         int max_depth = 1 ; 
-        HelperFunction(root,max_depth) ; 
+        Helper_function(root,max_depth) ; 
         return max_depth ; 
     }
 };
