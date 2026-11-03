@@ -11,57 +11,49 @@
  */
 class Solution {
 public:
-    void Helper_function ( TreeNode* p, TreeNode* q , bool &result ) { 
+    bool Helper_function ( TreeNode *p , TreeNode *q ) { 
         if ( p == NULL && q == NULL ) { 
-            result = true ; 
-            return ;
+            return true ; 
         }
         if ( p == NULL || q == NULL ) { 
-            result = false ; 
-            return ;
+            return false ; 
         }
-        queue<TreeNode*>q1 ; 
-        queue<TreeNode*>q2 ; 
-        q1.push(p) ; 
-        q2.push(q) ; 
-        while ( q1.size() > 0 && q2.size() > 0 ) { 
-            TreeNode* curr1 = q1.front() ; 
-            TreeNode* curr2 = q2.front() ; 
-            q1.pop() ; 
-            q2.pop() ; 
+        queue <TreeNode*> ans1 ; 
+        queue <TreeNode*> ans2 ; 
+        ans1.push(p) ; 
+        ans2.push(q) ; 
+        while ( ans1.size() > 0 && ans2.size() > 0 ) { 
+            TreeNode *curr1 = ans1.front() ; 
+            TreeNode *curr2 = ans2.front() ; 
             if ( curr1->val != curr2->val ) { 
-                result = false ; 
-                return ; 
+                return false ; 
             }
-            if ( curr1 -> left != NULL && curr2 -> left != NULL ) { 
-                q1.push(curr1->left) ; 
-                q2.push(curr2->left) ; 
+            ans1.pop() ; 
+            ans2.pop() ; 
+            if ( curr1->left != NULL && curr2->left != NULL ) { 
+                ans1.push(curr1->left) ; 
+                ans2.push(curr2->left) ; 
             }
-            else if ( curr1 -> left != NULL || curr2 -> left != NULL ) { 
-                result = false ; 
-                return ; 
+            else if ( curr1->left != NULL || curr2->left != NULL ) { 
+                return false ; 
             }
-            if ( curr1 -> right != NULL && curr2 -> right != NULL ) { 
-                q1.push(curr1->right) ; 
-                q2.push(curr2->right) ; 
+            if ( curr1->right != NULL && curr2->right != NULL ) { 
+                ans1.push(curr1->right) ; 
+                ans2.push(curr2->right) ; 
             }
-            else if ( curr1 -> right != NULL || curr2 -> right != NULL ) { 
-                result = false ; 
-                return ; 
+            else if ( curr1->right != NULL || curr2->right != NULL ) { 
+                return false ; 
             }
         }
-        if ( q1.size() == 0 && q2.size() == 0 ) { 
-            result = true ; 
-            return ; 
+        if ( ans1.size() == 0 && ans2.size() == 0 ) { 
+            return true ; 
         }
         else { 
-            result = false ; 
-            return ; 
+            return false ; 
         }
     }
     bool isSameTree(TreeNode* p, TreeNode* q) {
-        bool result = true ; 
-        Helper_function(p,q,result) ; 
+        bool result = Helper_function(p,q) ; 
         return result ; 
     }
 };
