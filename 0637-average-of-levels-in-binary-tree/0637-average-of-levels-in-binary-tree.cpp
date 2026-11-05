@@ -10,46 +10,44 @@
  * };
  */
 class Solution {
-public:
-    void HelperFunction ( TreeNode* root , vector<double> &ans , double sum , int count )  {
-        queue<TreeNode*> q ;
-        if ( root == NULL ) { 
-            ans.push_back(0.00000) ; 
-            return ; 
-        } 
+public: 
+    void Helper_function ( TreeNode* root , long long &sum , int &count , vector<double> &ans ) { 
+        queue <TreeNode*> q ; 
         q.push(root) ; 
         q.push(NULL) ; 
         while ( q.size() > 0 ) { 
             TreeNode* curr = q.front() ; 
             q.pop() ; 
-            if ( curr == NULL && q.size() != 0 ) { 
-                double avg = sum / count ;
+            if ( curr != NULL ) { 
+                sum = sum + curr->val ; 
+                count = count + 1 ; 
+            }
+            if ( curr == NULL && q.size() == 0 ) { 
+                double avg = double ( sum )  / count ; 
                 ans.push_back(avg) ; 
+                return ; 
+            }
+            else if ( curr == NULL && q.size() != 0 ) { 
                 q.push(NULL) ; 
+                double avg = double ( sum ) / count ; 
+                ans.push_back(avg) ; 
                 sum = 0 ; 
                 count = 0 ; 
                 continue ; 
             }
-            else if ( curr == NULL && q.size() == 0 ) { 
-                double avg = sum / count ;
-                ans.push_back(avg) ; 
-                break ; 
-            }
-            sum = sum + curr->val ; 
-            count++ ; 
             if ( curr->left != NULL ) { 
                 q.push(curr->left) ; 
             } 
             if ( curr->right != NULL ) { 
                 q.push(curr->right) ; 
-            } 
+            }
         }
     }
     vector<double> averageOfLevels(TreeNode* root) {
-        double sum = 0 ; 
         vector<double> ans ; 
         int count = 0 ; 
-        HelperFunction(root,ans,sum,count) ; 
+        long long sum = 0 ; 
+        Helper_function(root,sum,count,ans) ; 
         return ans ; 
     }
 };
