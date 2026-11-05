@@ -10,18 +10,27 @@
  * };
  */
 class Solution {
-public:
-    TreeNode* HelperFunction ( TreeNode* root ) {
-        if ( root == NULL ) { 
-            return NULL ; 
+public: 
+    void Helper_function ( TreeNode* root ) { 
+        queue <TreeNode*> q1 ; 
+        q1.push(root) ; 
+        while ( q1.size() > 0 ) { 
+            TreeNode* curr = q1.front() ; 
+            swap(curr->left,curr->right) ; 
+            q1.pop() ; 
+            if ( curr->left != NULL ) { 
+                q1.push(curr->left) ; 
+            }
+            if ( curr->right != NULL ) { 
+                q1.push(curr->right) ; 
+            }
         }
-        swap(root->right,root->left) ; 
-        HelperFunction(root->right) ; 
-        HelperFunction(root->left) ; 
-        return root ; 
     }
-    TreeNode* invertTree(TreeNode* root) {
-        HelperFunction(root) ; 
+    TreeNode* invertTree(TreeNode* root) { 
+        if ( root == NULL ) { 
+            return root ; 
+        }
+        Helper_function(root) ; 
         return root ; 
     }
 };
