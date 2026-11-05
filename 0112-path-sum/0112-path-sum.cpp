@@ -21,25 +21,24 @@ public:
         }
         Helper_function(root->left,ans,answer) ; 
         Helper_function(root->right,ans,answer) ; 
-        ans.pop_back() ; 
-    }
-    int hasPathSum(TreeNode* root,int targetSum ) {
+        ans.pop_back() ;  
+    } 
+    bool hasPathSum(TreeNode* root, int targetSum) { 
+        if ( root == NULL ) { 
+            return false ; 
+        }
         vector<int> ans ; 
         vector<vector<int>> answer ; 
         Helper_function(root,ans,answer) ; 
-        vector<int> numbers ; 
         for ( int i = 0 ; i < answer.size() ; i++ ) { 
-            int num = 0 ; 
+            int sum = 0 ; 
             for ( int j = 0 ; j < answer[i].size() ; j++ ) { 
-                num = num + answer[i][j] ; 
+                sum = sum + answer[i][j] ; 
             }
-            numbers.push_back(num) ; 
-        }
-        for ( int i = 0 ; i < numbers.size() ; i++ ) { 
-            if ( numbers[i] == targetSum ) { 
+            if ( sum == targetSum ) { 
                 return true ; 
             }
-        }
+        }  
         return false ; 
     }
 };
