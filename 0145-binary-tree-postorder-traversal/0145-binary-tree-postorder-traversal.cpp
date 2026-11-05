@@ -11,18 +11,17 @@
  */
 class Solution {
 public: 
-    vector <int> ans ; 
-    void TreeTraversal ( TreeNode* root , vector <int> &ans ) { 
+    void Helper_function ( TreeNode* root , vector <int> &ans ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        TreeTraversal(root->left,ans) ; 
-        TreeTraversal(root->right,ans) ; 
+        Helper_function(root->left,ans) ; 
+        Helper_function(root->right,ans) ; 
         ans.push_back(root->val) ; 
     }
     vector<int> postorderTraversal(TreeNode* root) {
-        vector <int> ans ; 
-        TreeTraversal(root,ans) ; 
+        vector<int> ans ; 
+        Helper_function(root,ans) ; 
         return ans ; 
     }
 };
