@@ -11,44 +11,41 @@
  */
 class Solution {
 public: 
-    vector <int> ans1 ; 
-    vector<vector<int>> ans2 ; 
-    void TreeTraversal ( TreeNode* root , vector<int> &ans1 , vector<vector<int>> &ans2 ) {  
-        if ( root == NULL ) { 
-            return ; 
-        }
-        queue <TreeNode*> Q1 ; 
-        Q1.push(root) ; 
-        Q1.push(NULL) ; 
-        while ( Q1.size() != 0 ) { 
-            TreeNode *curr = Q1.front() ; 
-            Q1.pop() ; 
+    void Helper_function ( TreeNode* root , vector<int> &ans , vector<vector<int>> &answer ) { 
+        queue <TreeNode*> q ; 
+        q.push(root) ; 
+        q.push(NULL) ; 
+        while ( q.size() != 0 ) { 
+            TreeNode* curr = q.front() ; 
+            q.pop() ;  
             if ( curr != NULL ) { 
-                ans1.push_back(curr->val) ; 
+                ans.push_back(curr->val) ;
             }
-            if ( curr == NULL && Q1.size() != 0 ) { 
-                ans2.push_back(ans1) ; 
-                ans1.clear() ; 
-                Q1.push(NULL) ; 
+            if ( curr == NULL && q.size() != 0 ) { 
+                answer.push_back(ans) ; 
+                q.push(NULL) ; 
+                ans.clear() ; 
                 continue ; 
             }
-            if ( curr == NULL && Q1.size() == 0 ) { 
-                ans2.push_back(ans1) ;
-                ans1.clear() ; 
+            else if ( curr == NULL && q.size() == 0 ) { 
+                answer.push_back(ans) ; 
                 break ; 
             }
-            if ( curr -> left != NULL ) { 
-                Q1.push(curr->left) ; 
+            if ( curr->left != NULL ) { 
+                q.push(curr->left) ; 
             } 
-            if ( curr -> right != NULL) { 
-                Q1.push(curr->right) ; 
-            } 
+            if ( curr->right != NULL ) { 
+                q.push(curr->right) ; 
+            }
         }
-    } 
-    vector<vector<int>> levelOrder(TreeNode* root) {
-        vector <int> ans1 ; 
-        vector<vector<int>> ans2 ; 
-        TreeTraversal(root,ans1,ans2) ; 
-        return ans2 ; 
+    }
+    vector<vector<int>> levelOrder(TreeNode* root) { 
+        if ( root == NULL ) { 
+            return {} ; 
+        }
+        vector<int> ans ; 
+        vector<vector<int>> answer ; 
+        Helper_function(root,ans,answer) ; 
+        return answer ; 
     }
 };
