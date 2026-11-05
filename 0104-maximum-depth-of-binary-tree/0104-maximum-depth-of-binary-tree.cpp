@@ -11,35 +11,35 @@
  */
 class Solution {
 public: 
-    void Helper_function(TreeNode *root,int &count) { 
-        queue <TreeNode*> q ; 
-        q.push(root) ; 
-        q.push(NULL) ; 
-        while ( q.size() > 0 ) { 
-            TreeNode* curr = q.front() ; 
-            q.pop() ; 
-            if ( curr == NULL && q.size() != 0 ) { 
-                count = count + 1 ; 
-                q.push(NULL) ; 
+    void max_depth ( TreeNode* root , int &count ) { 
+        queue <TreeNode*> q1 ; 
+        q1.push(root) ; 
+        q1.push(NULL) ; 
+        while ( q1.size() > 0 ) { 
+            TreeNode* curr = q1.front() ; 
+            q1.pop() ; 
+            if ( curr == NULL && q1.size() != 0 ) { 
+                q1.push(NULL) ; 
+                count++ ; 
                 continue ; 
-            } 
-            else if ( curr == NULL && q.size() == 0 ) { 
+            }
+            else if ( curr == NULL && q1.size() == 0 ) { 
                 break ; 
-            } 
+            }
             if ( curr->left != NULL ) { 
-                q.push(curr->left) ; 
-            } 
+                q1.push(curr->left) ; 
+            }
             if ( curr->right != NULL ) { 
-                q.push(curr->right) ; 
+                q1.push(curr->right) ; 
             }
         }
     }
-    int maxDepth(TreeNode* root) {
+    int maxDepth(TreeNode* root) { 
         if ( root == NULL ) { 
             return 0 ; 
         }
         int count = 1 ; 
-        Helper_function(root,count) ; 
+        max_depth(root,count) ; 
         return count ; 
     }
 };
