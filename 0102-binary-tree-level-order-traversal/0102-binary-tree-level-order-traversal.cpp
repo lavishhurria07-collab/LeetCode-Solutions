@@ -11,41 +11,41 @@
  */
 class Solution {
 public: 
-    void Helper_function ( TreeNode* root , vector<int> &ans , vector<vector<int>> &answer ) { 
+    void Helper_function ( TreeNode* root , vector<vector<int>> &ans , vector<int> &answer ) { 
         queue <TreeNode*> q ; 
         q.push(root) ; 
         q.push(NULL) ; 
-        while ( q.size() != 0 ) { 
-            TreeNode* curr = q.front() ; 
-            q.pop() ;  
+        while ( q.size() > 0 ) { 
+            TreeNode* curr = q.front() ;  
             if ( curr != NULL ) { 
-                ans.push_back(curr->val) ;
+                answer.push_back(curr->val) ; 
             }
+            q.pop() ;
             if ( curr == NULL && q.size() != 0 ) { 
-                answer.push_back(ans) ; 
+                ans.push_back(answer) ; 
                 q.push(NULL) ; 
-                ans.clear() ; 
+                answer.clear() ; 
                 continue ; 
             }
             else if ( curr == NULL && q.size() == 0 ) { 
-                answer.push_back(ans) ; 
-                break ; 
+                ans.push_back(answer) ; 
+                return ; 
             }
             if ( curr->left != NULL ) { 
                 q.push(curr->left) ; 
-            } 
+            }
             if ( curr->right != NULL ) { 
                 q.push(curr->right) ; 
             }
         }
     }
-    vector<vector<int>> levelOrder(TreeNode* root) { 
+    vector<vector<int>> levelOrder(TreeNode* root) {
         if ( root == NULL ) { 
             return {} ; 
         }
-        vector<int> ans ; 
-        vector<vector<int>> answer ; 
+        vector<vector<int>> ans ; 
+        vector<int> answer ; 
         Helper_function(root,ans,answer) ; 
-        return answer ; 
+        return ans ; 
     }
 };
