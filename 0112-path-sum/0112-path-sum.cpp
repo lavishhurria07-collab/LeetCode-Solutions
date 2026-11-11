@@ -11,7 +11,7 @@
  */
 class Solution {
 public: 
-    void Helper_function ( TreeNode* root , vector<int> &ans , vector<vector<int>> &answer ) { 
+    void Helper_function ( TreeNode* root , vector <int> &ans , vector<vector<int>> &answer ) { 
         if ( root == NULL ) { 
             return ; 
         }
@@ -21,13 +21,10 @@ public:
         }
         Helper_function(root->left,ans,answer) ; 
         Helper_function(root->right,ans,answer) ; 
-        ans.pop_back() ;  
-    } 
-    bool hasPathSum(TreeNode* root, int targetSum) { 
-        if ( root == NULL ) { 
-            return false ; 
-        }
-        vector<int> ans ; 
+        ans.pop_back() ; 
+    }
+    bool hasPathSum(TreeNode* root, int targetSum) {
+        vector <int> ans ; 
         vector<vector<int>> answer ; 
         Helper_function(root,ans,answer) ; 
         for ( int i = 0 ; i < answer.size() ; i++ ) { 
@@ -38,7 +35,7 @@ public:
             if ( sum == targetSum ) { 
                 return true ; 
             }
-        }  
+        }
         return false ; 
     }
 };
