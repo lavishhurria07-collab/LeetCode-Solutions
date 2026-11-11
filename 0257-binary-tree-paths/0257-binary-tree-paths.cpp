@@ -10,33 +10,33 @@
  * };
  */
 class Solution {
-public:
-    void Helper_function(TreeNode* root , vector<int> &ans , vector<vector<int>> &answer) {
+public: 
+    void Helper_function ( TreeNode* root , vector<int> &temp , vector<vector<int>> &answer ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        ans.push_back(root->val) ; 
+        temp.push_back(root->val) ; 
         if ( root->left == NULL && root->right == NULL ) { 
-            answer.push_back(ans) ; 
+            answer.push_back(temp) ; 
         }
-        Helper_function(root->left,ans,answer) ; 
-        Helper_function(root->right,ans,answer) ; 
-        ans.pop_back() ; 
+        Helper_function(root->left,temp,answer) ; 
+        Helper_function(root->right,temp,answer) ; 
+        temp.pop_back() ; 
     }
     vector<string> binaryTreePaths(TreeNode* root) {
-        vector<int>ans ; 
+        vector<int> temp ; 
         vector<vector<int>> answer ; 
-        Helper_function(root,ans,answer) ; 
-        vector<string> a ; 
+        Helper_function(root,temp,answer) ; 
+        vector<string> result ; 
         for ( int i = 0 ; i < answer.size() ; i++ ) { 
-            string ch = "" ; 
+            string a = "" ; 
             for ( int j = 0 ; j < answer[i].size() ; j++ ) { 
-                ch = ch + to_string(answer[i][j]) + "->" ; 
+                a = a + to_string(answer[i][j]) + "->" ; 
             }
-            ch.pop_back() ; 
-            ch.pop_back() ; 
-            a.push_back(ch) ; 
+            a.pop_back() ; 
+            a.pop_back() ;
+            result.push_back(a) ; 
         }
-        return a ; 
+        return result ; 
     }
 };
