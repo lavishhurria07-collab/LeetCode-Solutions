@@ -11,7 +11,7 @@
  */
 class Solution {
 public: 
-    void Helper_function ( TreeNode* root , long long &sum , int &count , vector<double> &ans ) { 
+    void Helper_function ( TreeNode* root , double &sum , int &count , vector <double> &answer ) { 
         queue <TreeNode*> q ; 
         q.push(root) ; 
         q.push(NULL) ; 
@@ -20,21 +20,23 @@ public:
             q.pop() ; 
             if ( curr != NULL ) { 
                 sum = sum + curr->val ; 
-                count = count + 1 ; 
+                count++ ; 
             }
-            if ( curr == NULL && q.size() == 0 ) { 
-                double avg = double ( sum )  / count ; 
-                ans.push_back(avg) ; 
-                return ; 
-            }
-            else if ( curr == NULL && q.size() != 0 ) { 
-                q.push(NULL) ; 
-                double avg = double ( sum ) / count ; 
-                ans.push_back(avg) ; 
-                sum = 0 ; 
+            if ( curr == NULL && q.size() != 0 ) { 
+                double avg = sum / count ; 
                 count = 0 ; 
+                sum = 0 ; 
+                answer.push_back(avg) ; 
+                q.push(NULL) ; 
                 continue ; 
-            }
+            } 
+            else if ( curr == NULL && q.size() == 0 ) { 
+                double avg = sum / count ; 
+                count = 0 ; 
+                sum = 0 ; 
+                answer.push_back(avg) ; 
+                return ; 
+            } 
             if ( curr->left != NULL ) { 
                 q.push(curr->left) ; 
             } 
@@ -44,10 +46,10 @@ public:
         }
     }
     vector<double> averageOfLevels(TreeNode* root) {
-        vector<double> ans ; 
-        int count = 0 ; 
-        long long sum = 0 ; 
-        Helper_function(root,sum,count,ans) ; 
-        return ans ; 
+        double sum = 0 ; 
+        int count = 0 ;  
+        vector <double> answer ; 
+        Helper_function(root,sum,count,answer) ; 
+        return answer ; 
     }
 };
