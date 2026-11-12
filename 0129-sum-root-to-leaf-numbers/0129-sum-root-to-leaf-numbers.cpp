@@ -9,31 +9,31 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
+class Solution { 
 public: 
-    void Helper_function ( TreeNode* root , vector<int> &ans , vector<vector<int>> &answer ) { 
+    void sum_numbers ( TreeNode* root , vector <int> &temp , vector<vector<int>> &answer ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        ans.push_back(root->val) ; 
+        temp.push_back(root->val) ; 
         if ( root->left == NULL && root->right == NULL ) { 
-            answer.push_back(ans) ; 
+            answer.push_back(temp) ; 
         }
-        Helper_function(root->left,ans,answer) ; 
-        Helper_function(root->right,ans,answer) ; 
-        ans.pop_back() ; 
+        sum_numbers(root->left,temp,answer) ; 
+        sum_numbers(root->right,temp,answer) ; 
+        temp.pop_back() ; 
     }
     int sumNumbers(TreeNode* root) {
-        vector<int> ans ; 
+        vector <int> temp ; 
         vector<vector<int>> answer ; 
-        Helper_function(root,ans,answer) ; 
+        sum_numbers(root,temp,answer) ; 
         int sum = 0 ; 
         for ( int i = 0 ; i < answer.size() ; i++ ) { 
-            int num = 0 ; 
+            int number = 0 ; 
             for ( int j = 0 ; j < answer[i].size() ; j++ ) { 
-                num = num * 10 + answer[i][j] ; 
+                number = number * 10 + answer[i][j] ; 
             }
-            sum = sum + num ; 
+            sum = sum + number ; 
         }
         return sum ; 
     }
