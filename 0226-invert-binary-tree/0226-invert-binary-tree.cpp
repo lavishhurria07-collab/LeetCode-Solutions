@@ -11,26 +11,19 @@
  */
 class Solution {
 public: 
-    void Helper_function ( TreeNode* root ) { 
-        queue <TreeNode*> q1 ; 
-        q1.push(root) ; 
-        while ( q1.size() > 0 ) { 
-            TreeNode* curr = q1.front() ; 
-            swap(curr->left,curr->right) ; 
-            q1.pop() ; 
-            if ( curr->left != NULL ) { 
-                q1.push(curr->left) ; 
-            }
-            if ( curr->right != NULL ) { 
-                q1.push(curr->right) ; 
-            }
-        }
-    }
-    TreeNode* invertTree(TreeNode* root) { 
+    void helper_function  (TreeNode* root ) { 
         if ( root == NULL ) { 
-            return root ; 
+            return ; 
         }
-        Helper_function(root) ; 
+        swap(root->left,root->right) ; 
+        helper_function(root->left) ; 
+        helper_function(root->right) ; 
+    }
+    TreeNode* invertTree(TreeNode* root) {
+        if  ( root == NULL ) { 
+            return NULL ; 
+        }
+        helper_function(root) ; 
         return root ; 
     }
 };
