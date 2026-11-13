@@ -11,32 +11,32 @@
  */
 class Solution {
 public: 
-    void Helper_function ( TreeNode* root , vector<int> &temp , vector<vector<int>> &answer ) { 
+    void helper_function ( TreeNode* root , vector <int> &ans , vector<vector<int>> &answer ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        temp.push_back(root->val) ; 
+        ans.push_back(root->val) ; 
         if ( root->left == NULL && root->right == NULL ) { 
-            answer.push_back(temp) ; 
+            answer.push_back(ans) ; 
         }
-        Helper_function(root->left,temp,answer) ; 
-        Helper_function(root->right,temp,answer) ; 
-        temp.pop_back() ; 
+        helper_function(root->left,ans,answer) ; 
+        helper_function(root->right,ans,answer) ; 
+        ans.pop_back() ; 
     }
-    vector<string> binaryTreePaths(TreeNode* root) {
-        vector<int> temp ; 
+    vector<string> binaryTreePaths(TreeNode* root) { 
+        vector <int> ans ; 
         vector<vector<int>> answer ; 
-        Helper_function(root,temp,answer) ; 
-        vector<string> result ; 
+        helper_function(root,ans,answer) ; 
+        vector <string> result ; 
         for ( int i = 0 ; i < answer.size() ; i++ ) { 
-            string a = "" ; 
+            string c = "" ; 
             for ( int j = 0 ; j < answer[i].size() ; j++ ) { 
-                a = a + to_string(answer[i][j]) + "->" ; 
+                c = c + to_string(answer[i][j]) + "->" ; 
             }
-            a.pop_back() ; 
-            a.pop_back() ;
-            result.push_back(a) ; 
-        }
+            c.pop_back() ; 
+            c.pop_back() ; 
+            result.push_back(c) ; 
+        } 
         return result ; 
     }
 };
