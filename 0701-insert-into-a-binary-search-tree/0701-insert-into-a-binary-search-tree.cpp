@@ -17,29 +17,29 @@ public:
         }
         if ( root->val > val ) { 
             if ( root->left == NULL ) { 
-                TreeNode* new_node = new TreeNode(val) ; 
-                root->left = new_node ; 
+                TreeNode* curr = new TreeNode(val) ; 
+                root->left = curr ; 
                 return ; 
             }
             else { 
                 Helper_Function(root->left,val) ; 
             }
-        } 
-        else if ( root->val < val ) { 
+        }
+        if ( root->val < val ) { 
             if ( root->right == NULL ) { 
-                TreeNode* new_node = new TreeNode(val) ; 
-                root->right = new_node ; 
+                TreeNode* curr = new TreeNode(val) ; 
+                root->right = curr ; 
                 return ; 
             }
             else { 
                 Helper_Function(root->right,val) ; 
             }
-        } 
+        }
     }
-    TreeNode* insertIntoBST(TreeNode* root, int val) {
+    TreeNode* insertIntoBST(TreeNode* root, int val) { 
         if ( root == NULL ) { 
-            TreeNode* new_node = new TreeNode(val) ;  
-            return new_node ; 
+            TreeNode* newnode = new TreeNode(val) ; 
+            return newnode ; 
         }
         Helper_Function(root,val) ; 
         return root ; 
