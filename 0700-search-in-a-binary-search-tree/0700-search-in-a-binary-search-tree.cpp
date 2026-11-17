@@ -9,7 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution { 
+class Solution {
 public: 
     void Helper_Function ( TreeNode* root , int val , TreeNode* &curr ) { 
         if ( root == NULL ) { 
@@ -28,10 +28,10 @@ public:
     }
     TreeNode* searchBST(TreeNode* root, int val) {
         TreeNode* curr = NULL ; 
-        Helper_Function(root,val,curr) ; 
-        if ( curr == NULL ) { 
+        if ( root == NULL ) { 
             return NULL ; 
         }
+        Helper_Function(root,val,curr) ; 
         return curr ; 
     }
 };
