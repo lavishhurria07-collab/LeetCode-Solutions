@@ -22,8 +22,8 @@ public:
     int getMinimumDifference(TreeNode* root) {
         vector <int> ans ; 
         Helper_Function(root,ans) ; 
-        int prev = ans[0] ; 
         int min_diff = INT_MAX ; 
+        int prev = ans[0] ; 
         for ( int i = 1 ; i < ans.size() ; i++ ) { 
             int diff = ans[i] - prev ; 
             min_diff = min(min_diff,diff) ; 
