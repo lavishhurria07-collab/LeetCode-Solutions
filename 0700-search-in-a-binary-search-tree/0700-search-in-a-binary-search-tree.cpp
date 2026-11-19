@@ -11,24 +11,24 @@
  */
 class Solution { 
 public: 
-    void Helper_function ( TreeNode* root , int val , TreeNode* &curr ) { 
+    void Helper_Function(TreeNode* root , int val , TreeNode* &curr ) { 
         if ( root == NULL ) { 
-            return ; 
+            return  ; 
         }
         if ( root->val == val ) { 
             curr = root ; 
             return ; 
         }
         if ( root->val > val ) { 
-            Helper_function(root->left,val,curr) ; 
+            Helper_Function(root->left,val,curr) ; 
         }
         if ( root->val < val ) { 
-            Helper_function(root->right,val,curr) ; 
+            Helper_Function(root->right,val,curr) ; 
         }
     }
     TreeNode* searchBST(TreeNode* root, int val) {
         TreeNode* curr = NULL ; 
-        Helper_function(root,val,curr) ; 
+        Helper_Function(root,val,curr) ; 
         return curr ; 
     }
 };
