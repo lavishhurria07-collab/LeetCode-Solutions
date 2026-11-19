@@ -16,30 +16,30 @@ public:
             return ; 
         }
         if ( root->val > val ) { 
-            if ( root->left == NULL ) { 
-                TreeNode* curr = new TreeNode(val) ; 
-                root->left = curr ; 
-                return ; 
+            if ( root->left != NULL ) { 
+                Helper_Function(root->left,val) ; 
             }
             else { 
-                Helper_Function(root->left,val) ; 
+                TreeNode* newnode = new TreeNode(val) ; 
+                root->left = newnode ; 
+                return ; 
             }
         }
         if ( root->val < val ) { 
-            if ( root->right == NULL ) { 
-                TreeNode* curr = new TreeNode(val) ; 
-                root->right = curr ; 
-                return ; 
+            if ( root->right != NULL ) { 
+                Helper_Function(root->right,val) ; 
             }
             else { 
-                Helper_Function(root->right,val) ; 
+                TreeNode* newnode = new TreeNode(val) ; 
+                root->right = newnode ; 
+                return ; 
             }
         }
     }
     TreeNode* insertIntoBST(TreeNode* root, int val) { 
         if ( root == NULL ) { 
             TreeNode* newnode = new TreeNode(val) ; 
-            return newnode ; 
+            return newnode ;  
         }
         Helper_Function(root,val) ; 
         return root ; 
