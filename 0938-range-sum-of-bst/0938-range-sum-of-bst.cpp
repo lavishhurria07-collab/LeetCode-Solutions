@@ -11,23 +11,23 @@
  */
 class Solution { 
 public: 
-    void Helper_function ( TreeNode* root , int low , int high , int &sum ) { 
+    void Helper_Function ( TreeNode* root , int low , int high , int &sum ) { 
         if ( root == NULL ) { 
             return ; 
         }
         if ( root->val >= low && root->val <= high ) { 
             sum = sum + root->val ; 
-        } 
+        }
         if ( root->val >= low ) { 
-            Helper_function(root->left,low,high,sum) ; 
+            Helper_Function(root->left,low,high,sum) ; 
         }
         if ( root->val <= high ) { 
-            Helper_function(root->right,low,high,sum) ; 
+            Helper_Function(root->right,low,high,sum) ; 
         }
     }
     int rangeSumBST(TreeNode* root, int low, int high) {
-        int sum = 0 ;
-        Helper_function(root,low,high,sum) ; 
+        int sum = 0 ; 
+        Helper_Function(root,low,high,sum) ; 
         return sum ; 
     }
 };
