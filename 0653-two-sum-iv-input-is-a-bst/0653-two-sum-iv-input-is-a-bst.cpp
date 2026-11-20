@@ -11,28 +11,28 @@
  */
 class Solution { 
 public: 
-    void Helper_function ( TreeNode* root , vector <int> &ans ) { 
+    void Helper_Function ( TreeNode* root , vector <int> &ans ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        Helper_function(root->left,ans) ; 
-        ans.push_back(root->val) ;
-        Helper_function(root->right,ans) ; 
+        Helper_Function(root->left,ans) ; 
+        ans.push_back(root->val) ; 
+        Helper_Function(root->right,ans) ; 
     }
-    bool findTarget(TreeNode* root, int k) { 
+    bool findTarget(TreeNode* root, int k) {
         vector <int> ans ; 
-        Helper_function(root,ans) ; 
+        Helper_Function(root,ans) ; 
         int left = 0 ; 
         int right = ans.size() - 1 ; 
         while ( left < right ) { 
             if ( ans[left] + ans[right] == k ) { 
                 return true ; 
             }
-            else if ( ans[left] + ans[right] < k ) { 
-                left++ ; 
-            }
             else if ( ans[left] + ans[right] > k ) { 
                 right-- ; 
+            } 
+            else if ( ans[left] + ans[right] < k ) { 
+                left++ ; 
             }
         }
         return false ; 
