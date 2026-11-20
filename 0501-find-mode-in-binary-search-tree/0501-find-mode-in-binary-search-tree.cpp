@@ -9,55 +9,52 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution { 
+class Solution {  
 public: 
-    void Helper_function ( TreeNode* root , vector <int> &ans ) { 
+    void Helper_Function ( TreeNode* root , vector <int> &ans ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        Helper_function(root->left,ans) ; 
+        Helper_Function(root->left,ans) ; 
         ans.push_back(root->val) ; 
-        Helper_function(root->right,ans) ; 
+        Helper_Function(root->right,ans) ; 
     }
-    vector<int> findMode(TreeNode* root) {
+    vector<int> findMode(TreeNode* root) { 
         vector <int> ans ; 
-        Helper_function(root,ans) ; 
-        int count = 1 ; 
-        int max_freq = 0 ; 
+        Helper_Function(root,ans) ; 
+        int curr_element = ans[0] ; 
+        int freq = 1 ; 
+        int max_freq = 1 ; 
         vector <int> answer ; 
-        int prev = ans[0] ; 
-        if ( ans.size() == 1 ) { 
-            return {ans[0]} ; 
-        }
         for ( int i = 1 ; i < ans.size() ; i++ ) { 
-            if ( ans[i] == prev ) { 
-                count++ ; 
+            if ( ans[i] == curr_element ) { 
+                freq++ ; 
             }
-            else if ( ans[i] != prev ) { 
-                if ( count > max_freq ) { 
+            else if ( ans[i] != curr_element ) {  
+                if ( freq > max_freq ) { 
                     answer.clear() ; 
-                    answer.push_back(prev) ; 
-                    max_freq = count ;
-                    count = 1 ;  
+                    answer.push_back(curr_element) ; 
+                    max_freq = freq ;
+                    curr_element = ans[i] ; 
+                    freq = 1 ; 
                 }
-                else if ( max_freq == count ) { 
-                    answer.push_back(prev) ; 
-                    count = 1 ;
+                else if ( freq < max_freq ) { 
+                    freq = 1 ; 
+                    curr_element = ans[i] ;
                 }
-                else if ( max_freq > count ) { 
-                    count = 1 ; 
+                else if ( freq == max_freq ) { 
+                    freq = 1 ; 
+                    answer.push_back(curr_element) ; 
+                    curr_element = ans[i] ;
                 }
-                prev = ans[i] ; 
             }
-        } 
-        if ( count > max_freq ) { 
-            answer.clear() ; 
-            int a = ans.back() ; 
-            answer.push_back(a) ; 
         }
-        else if ( count == max_freq ) { 
-            int a = ans.back() ; 
-            answer.push_back(a) ; 
+        if ( freq > max_freq ) { 
+            answer.clear() ; 
+            answer.push_back(curr_element) ; 
+        }
+        else if ( freq == max_freq ) {
+            answer.push_back(curr_element) ; 
         }
         return answer ; 
     }
