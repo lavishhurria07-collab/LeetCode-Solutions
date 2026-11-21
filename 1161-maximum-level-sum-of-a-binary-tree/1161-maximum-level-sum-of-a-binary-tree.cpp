@@ -9,9 +9,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
+class Solution { 
 public: 
-    void Helper_function ( TreeNode* root , int &level , int &sum , int &max_sum , int &max_level ) { 
+    void Helper_Function ( TreeNode* root , vector<int> &level , vector<int> &answer ) { 
         queue <TreeNode*> q ; 
         q.push(root) ; 
         q.push(NULL) ; 
@@ -19,23 +19,24 @@ public:
             TreeNode* curr = q.front() ; 
             q.pop() ; 
             if ( curr != NULL ) { 
-                sum = sum + curr->val ; 
+                level.push_back(curr->val) ; 
             } 
             if ( curr == NULL && q.size() != 0 ) { 
-                if ( max_sum < sum ) { 
-                    max_sum = sum ; 
-                    max_level = level ; 
+                int a = 0 ; 
+                for ( int i = 0 ; i < level.size() ; i++ ) { 
+                    a = a + level[i] ; 
                 }
-                sum = 0 ; 
-                level++ ; 
+                answer.push_back(a) ; 
+                level.clear() ; 
                 q.push(NULL) ; 
                 continue ; 
             } 
             else if ( curr == NULL && q.size() == 0 ) { 
-                if ( max_sum < sum ) { 
-                    max_sum = sum ; 
-                    max_level = level ; 
-                }
+                int a = 0 ;  
+                for ( int i = 0 ; i < level.size() ; i++ ) { 
+                    a = a + level[i] ; 
+                } 
+                answer.push_back(a) ; 
                 return ; 
             } 
             if ( curr->left != NULL ) { 
@@ -47,11 +48,15 @@ public:
         }
     }
     int maxLevelSum(TreeNode* root) {
-        int level = 1 ;  
-        int sum = 0 ;
-        int max_sum = INT_MIN ; 
-        int max_level = 1 ; 
-        Helper_function(root,level,sum,max_sum,max_level) ; 
-        return max_level ; 
+        vector <int> level ; 
+        vector<int> answer ; 
+        Helper_Function(root,level,answer) ; 
+        int max_sum = *max_element(answer.begin(),answer.end()) ; 
+        for ( int i = 0 ; i < answer.size() ; i++ ) { 
+            if ( answer[i] == max_sum ) { 
+                return ( i + 1 ) ; 
+            }
+        }
+        return 0 ; 
     }
 };
