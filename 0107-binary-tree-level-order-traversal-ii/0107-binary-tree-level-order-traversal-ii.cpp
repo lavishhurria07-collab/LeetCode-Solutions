@@ -9,27 +9,27 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
+class Solution { 
 public: 
-    void Helper_function ( TreeNode* root , vector<vector<int>> &answer , vector<int> &ans ) { 
+    void Helper_Function ( TreeNode* root , vector <int> &level , vector<vector<int>> &answer ) { 
         queue <TreeNode*> q ; 
         q.push(root) ; 
         q.push(NULL) ; 
         while ( q.size() > 0 ) { 
             TreeNode* curr = q.front() ; 
-            if ( curr != NULL ) { 
-                ans.push_back(curr->val) ; 
-            }
             q.pop() ; 
+            if ( curr != NULL ) { 
+                level.push_back(curr->val) ; 
+            }
             if ( curr == NULL && q.size() != 0 ) { 
-                answer.push_back(ans) ; 
-                ans.clear() ; 
+                answer.push_back(level) ; 
+                level.clear() ; 
                 q.push(NULL) ; 
                 continue ; 
-            } 
+            }
             else if ( curr == NULL && q.size() == 0 ) { 
-                answer.push_back(ans) ; 
-                break ; 
+                answer.push_back(level) ; 
+                return ; 
             }
             if ( curr->left != NULL ) { 
                 q.push(curr->left) ; 
@@ -43,9 +43,9 @@ public:
         if ( root == NULL ) { 
             return {} ; 
         }
-        vector<vector<int>> answer ;
-        vector<int> ans ; 
-        Helper_function(root,answer,ans) ; 
+        vector <int> level ; 
+        vector<vector<int>> answer ; 
+        Helper_Function(root,level,answer) ; 
         reverse(answer.begin(),answer.end()) ; 
         return answer ; 
     }
