@@ -9,9 +9,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
+class Solution { 
 public: 
-    void Helper_function ( TreeNode* root , vector <int> &answer , vector <int> &temp ) { 
+    void Helper_Function ( TreeNode* root , vector<int> &level , vector<int> &answer ) { 
         queue <TreeNode*> q ; 
         q.push(root) ; 
         q.push(NULL) ; 
@@ -19,35 +19,35 @@ public:
             TreeNode* curr = q.front() ; 
             q.pop() ; 
             if ( curr != NULL ) { 
-                temp.push_back(curr->val) ; 
+                level.push_back(curr->val) ; 
             } 
             if ( curr == NULL && q.size() != 0 ) { 
-                int max_val = *max_element(temp.begin(),temp.end()) ; 
-                answer.push_back(max_val) ; 
-                temp.clear() ; 
+                int a = *max_element(level.begin(),level.end()) ; 
+                answer.push_back(a) ; 
+                level.clear() ; 
                 q.push(NULL) ; 
                 continue ; 
             } 
             else if ( curr == NULL && q.size() == 0 ) { 
-                int max_val = *max_element(temp.begin(),temp.end()) ; 
-                answer.push_back(max_val) ; 
+                int a = *max_element(level.begin(),level.end()) ; 
+                answer.push_back(a) ; 
                 return ; 
-            }
+            } 
             if ( curr->left != NULL ) { 
                 q.push(curr->left) ; 
             } 
             if ( curr->right != NULL ) { 
                 q.push(curr->right) ; 
-            } 
+            }
         }
     }
     vector<int> largestValues(TreeNode* root) { 
         if ( root == NULL ) { 
             return {} ; 
         }
-        vector <int> answer ; 
-        vector <int> temp ; 
-        Helper_function(root,answer,temp) ; 
+        vector<int> level ; 
+        vector<int> answer ; 
+        Helper_Function(root,level,answer) ; 
         return answer ; 
     }
 };
