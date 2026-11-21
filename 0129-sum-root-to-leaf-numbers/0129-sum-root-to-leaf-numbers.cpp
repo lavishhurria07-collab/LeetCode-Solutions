@@ -11,30 +11,26 @@
  */
 class Solution { 
 public: 
-    void sum_numbers ( TreeNode* root , vector <int> &temp , vector<vector<int>> &answer ) { 
+    void Helper_Function ( TreeNode* root , vector<int> &level , int &sum ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        temp.push_back(root->val) ; 
+        level.push_back(root->val) ; 
+        Helper_Function(root->left,level,sum) ; 
+        Helper_Function(root->right,level,sum) ; 
         if ( root->left == NULL && root->right == NULL ) { 
-            answer.push_back(temp) ; 
-        }
-        sum_numbers(root->left,temp,answer) ; 
-        sum_numbers(root->right,temp,answer) ; 
-        temp.pop_back() ; 
-    }
-    int sumNumbers(TreeNode* root) {
-        vector <int> temp ; 
-        vector<vector<int>> answer ; 
-        sum_numbers(root,temp,answer) ; 
-        int sum = 0 ; 
-        for ( int i = 0 ; i < answer.size() ; i++ ) { 
-            int number = 0 ; 
-            for ( int j = 0 ; j < answer[i].size() ; j++ ) { 
-                number = number * 10 + answer[i][j] ; 
+            int a = 0 ; 
+            for ( int i = 0 ; i < level.size() ; i++ ) { 
+                a = a * 10 + level[i] ; 
             }
-            sum = sum + number ; 
+            sum = sum + a ; 
         }
+        level.pop_back() ; 
+    }
+    int sumNumbers(TreeNode* root) { 
+        vector <int> level ; 
+        int sum = 0 ; 
+        Helper_Function(root,level,sum) ; 
         return sum ; 
     }
 };
