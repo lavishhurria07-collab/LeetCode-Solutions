@@ -11,32 +11,28 @@
  */
 class Solution { 
 public: 
-    void Helper_function ( TreeNode* root , vector <int> &ans , vector<vector<int>> &answer ) { 
+    void Helper_Function ( TreeNode* root , vector<int> &answer , vector<vector<int>> &ans , int targetSum ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        ans.push_back(root->val) ; 
+        answer.push_back(root->val) ; 
         if ( root->left == NULL && root->right == NULL ) { 
-            answer.push_back(ans) ; 
-        }
-        Helper_function(root->left,ans,answer) ; 
-        Helper_function(root->right,ans,answer) ; 
-        ans.pop_back() ; 
-    }
-    vector<vector<int>> pathSum(TreeNode* root, int targetSum ) { 
-        vector <int> ans ; 
-        vector<vector<int>> answer ; 
-        Helper_function(root,ans,answer) ; 
-        vector<vector<int>> result ; 
-        for ( int i = 0 ; i < answer.size() ; i++ ) { 
             int sum = 0 ; 
-            for ( int j = 0 ; j < answer[i].size() ; j++ ) { 
-                sum = sum + answer[i][j] ; 
+            for ( int i = 0 ; i < answer.size() ; i++ ) { 
+                sum = sum + answer[i] ; 
             }
             if ( sum == targetSum ) { 
-                result.push_back(answer[i]) ; 
+                ans.push_back(answer) ; 
             }
         }
-        return result ; 
+        Helper_Function(root->left,answer,ans,targetSum) ; 
+        Helper_Function(root->right,answer,ans,targetSum) ; 
+        answer.pop_back() ; 
+    }
+    vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
+        vector <int> answer ; 
+        vector<vector<int>> ans ; 
+        Helper_Function(root,answer,ans,targetSum) ; 
+        return ans ; 
     }
 };
