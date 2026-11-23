@@ -8,15 +8,15 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-class Solution {
-public:
+class Solution { 
+public: 
     int getDecimalValue(ListNode* head) { 
-        int num = 0 ; 
+        int number = 0 ; 
         ListNode* temp = head ; 
         while ( temp != NULL ) { 
-            num = num * 2 + temp->val ;  
-            temp = temp->next ;
+            number = number * 2 + temp->val ; 
+            temp = temp->next ; 
         }
-        return num ; 
+        return number ; 
     }
 };
