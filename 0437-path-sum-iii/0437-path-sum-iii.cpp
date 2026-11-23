@@ -9,45 +9,36 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
-public: 
-    void Helper_function( TreeNode* root , long long sum , int &count ,int &target ) { 
+class Solution { 
+public:  
+    void main_function ( TreeNode* root , vector <int> &ans , long long &count , int targetSum ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        // if ( root->left == NULL && root->right == NULL ) { 
-        //     answer.push_back(ans) ; 
-        // }
-        sum = sum + root->val ; 
-        if ( sum == target ) { 
+        ans.push_back(root->val) ;  
+        long long sum = 0 ; 
+        for ( int i = 0 ; i < ans.size() ; i++ ) { 
+            sum = sum + ans[i] ; 
+        }
+        if ( sum == targetSum ) { 
             count++ ; 
-        } 
-        Helper_function(root->left,sum,count,target) ; 
-        Helper_function(root->right,sum,count,target) ; 
-        sum = sum - root->val ; 
+        }
+        main_function(root->left,ans,count,targetSum) ; 
+        main_function(root->right,ans,count,targetSum) ; 
+        ans.pop_back() ; 
     }
-    void Traverse ( TreeNode* root , long long sum , int &count ,int &target ) { 
+    void Helper_Function ( TreeNode* root , long long &count , vector <int> &ans , int targetSum ) { 
         if ( root == NULL ) { 
             return ; 
         }
-        Traverse(root->left,sum,count,target) ; 
-        Helper_function(root,sum,count,target) ; 
-        Traverse(root->right,sum,count,target) ; 
+        main_function(root,ans,count,targetSum) ; 
+        Helper_Function(root->left,count,ans,targetSum) ; 
+        Helper_Function(root->right,count,ans,targetSum) ; 
     }
     int pathSum(TreeNode* root, int targetSum) {
-        int target = targetSum ; 
-        int count = 0 ; 
-        long long sum = 0 ; 
-        Traverse(root,sum,count,target) ; 
-        // for ( int i = 0 ; i < answer.size() ; i++ ) { 
-        //     int sum = 0 ; 
-        //     for ( int j = 0 ; j < answer[i].size() ; j++ ) { 
-        //         sum = sum + answer[i][j] ; 
-        //     }
-        //     if ( sum == targetSum ) { 
-        //         count++ ; 
-        //     }
-        // }
+        long long count = 0 ; 
+        vector<int> ans ; 
+        Helper_Function(root,count,ans,targetSum) ; 
         return count ; 
     }
 };
