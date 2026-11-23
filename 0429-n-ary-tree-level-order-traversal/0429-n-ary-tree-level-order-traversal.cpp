@@ -17,9 +17,10 @@ public:
     }
 };
 */
+
 class Solution { 
 public: 
-    void helper_function ( Node* root , vector <int> &ans , vector<vector<int>> &answer ) { 
+    void Helper_Function(Node* root , vector<int> &ans , vector<vector<int>> &answer ) { 
         queue <Node*> q ; 
         q.push(root) ; 
         q.push(NULL) ; 
@@ -30,9 +31,9 @@ public:
                 ans.push_back(curr->val) ; 
             } 
             if ( curr == NULL && q.size() != 0 ) { 
-                q.push(NULL) ; 
                 answer.push_back(ans) ; 
                 ans.clear() ; 
+                q.push(NULL) ; 
                 continue ; 
             } 
             else if ( curr == NULL && q.size() == 0 ) { 
@@ -40,9 +41,7 @@ public:
                 return ; 
             } 
             for ( int i = 0 ; i < curr->children.size() ; i++ ) { 
-                if ( curr->children[i] != NULL ) { 
-                    q.push(curr->children[i]) ; 
-                }
+                q.push(curr->children[i]) ; 
             }
         }
     }
@@ -52,7 +51,7 @@ public:
         }
         vector<int> ans ; 
         vector<vector<int>> answer ; 
-        helper_function(root,ans,answer) ; 
+        Helper_Function(root,ans,answer) ; 
         return answer ; 
     }
 };
