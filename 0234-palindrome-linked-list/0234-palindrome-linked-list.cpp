@@ -10,36 +10,22 @@
  */
 class Solution {
 public:
-    bool isPalindrome(ListNode* head) {
-        int count = 0 ;
-        ListNode *temp = head ; 
+    bool isPalindrome(ListNode* head) { 
+        if ( head->next == NULL ) { 
+            return true ; 
+        }
+        vector <int> answer ; 
+        answer.push_back(head->val) ; 
+        ListNode* temp = head->next ;  
         while ( temp != NULL ) { 
-            count++ ; 
-            temp = temp -> next ; 
-        }
-        int middle = count / 2 ; 
-        temp = head ; 
-        ListNode *prev = NULL ; 
-        ListNode *nxt = NULL ; 
-        ListNode *current ; 
-        for ( int i = 0 ; i < middle ; i++ ) { 
-            temp = temp -> next ; 
-        }
-        current = temp ; 
-        while ( current != NULL ) { 
-            nxt = current -> next ; 
-            current -> next = prev ; 
-            prev = current ; 
-            current = nxt ; 
-        }
-        current = prev ;  
-        ListNode *temp1 = head ; 
-        while ( current != NULL ) { 
-            if ( current -> val != temp1 -> val ) { 
+            answer.push_back(temp->val) ; 
+            temp = temp->next ; 
+        } 
+        int n = answer.size() ; 
+        for ( int i = 0 ; i < n / 2 ; i++ ) { 
+            if ( answer[i] != answer[n-i-1] ) { 
                 return false ; 
             }
-            current = current -> next ; 
-            temp1 = temp1 -> next ; 
         }
         return true ; 
     }
