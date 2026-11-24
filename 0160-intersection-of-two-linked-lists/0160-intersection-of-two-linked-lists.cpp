@@ -8,47 +8,22 @@
  */
 class Solution {
 public:
+    void Helper_Function ( ListNode* head , unordered_set <ListNode*> &ans ) { 
+        ListNode* temp = head ; 
+        while ( temp != NULL ) { 
+            ans.insert(temp) ; 
+            temp = temp->next ; 
+        }
+    }
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        int sizeA = 0 ; 
-        ListNode *tempA = headA ; 
-        ListNode *tempB = headB ;
-        while ( tempA != NULL ) { 
-            sizeA++ ; 
-            tempA = tempA -> next ; 
+        unordered_set <ListNode*> nodeA ; 
+        Helper_Function(headA,nodeA) ; 
+        while ( headB != NULL ) { 
+            if ( nodeA.find(headB) != nodeA.end() ) { 
+                return headB ; 
+            }
+            headB = headB->next ; 
         }
-        int sizeB = 0 ; 
-        while ( tempB != NULL ) { 
-            sizeB++ ; 
-            tempB = tempB -> next ; 
-        }
-        tempA = headA ; 
-        tempB = headB ; 
-        if ( sizeA >= sizeB ) { 
-            int diff = sizeA - sizeB ; 
-            for ( int i = 0 ; i < diff ; i++ ) { 
-                tempA = tempA -> next ; 
-            }
-            while ( tempA != NULL && tempB != NULL ) { 
-                if ( tempA == tempB ) { 
-                    return tempA ; 
-                }
-                tempA = tempA -> next ; 
-                tempB = tempB -> next ;  
-            }
-        } 
-        else { 
-            int diff = sizeB - sizeA ; 
-            for ( int i = 0 ; i < diff ; i++ ) { 
-                tempB = tempB -> next ; 
-            }
-            while ( tempA != NULL && tempB != NULL ) { 
-                if ( tempA == tempB ) { 
-                    return tempA ; 
-                }
-                tempA = tempA -> next ; 
-                tempB = tempB -> next ;  
-            }
-        }
-        return NULL ;  
+        return NULL ; 
     }
 };
