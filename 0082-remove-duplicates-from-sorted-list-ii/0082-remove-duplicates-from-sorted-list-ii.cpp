@@ -10,24 +10,42 @@
  */
 class Solution {
 public:
-    ListNode* deleteDuplicates(ListNode* head) {
-        ListNode *dummy = new ListNode(0) ;
-        dummy -> next = head ;
-        ListNode *temp = head ; 
-        ListNode *prev = dummy ; 
-        while ( temp != NULL && temp -> next != NULL ) {
-            if ( temp->val == temp->next->val ) { 
-                while ( temp->next!=NULL && temp->val==temp->next->val ) { 
-                    temp = temp -> next ; 
-                }  
-                prev -> next = temp -> next ; 
-                temp = temp -> next ;
-            }
-            else { 
-                prev = prev -> next ; 
-                temp = temp -> next ; 
+    ListNode* deleteDuplicates(ListNode* head) { 
+        if ( head == NULL || head->next == NULL ) { 
+            return head ; 
+        }
+        ListNode* temp = head ; 
+        unordered_set <int> answer ;
+        vector <int> frequency(201,0) ; 
+        while ( temp != NULL ) { 
+            int value = temp->val ; 
+            frequency[value+100]++ ; 
+            temp = temp->next ; 
+        }
+        for ( int i = 0 ; i <= 200 ; i++ ) { 
+            if ( frequency[i] > 1 ) { 
+                int value = i - 100 ; 
+                answer.insert(value) ; 
             }
         }
-        return dummy -> next ; 
+        ListNode* dummy = new ListNode(0) ; 
+        dummy->next = head ; 
+        ListNode* prev = dummy ; 
+        ListNode* curr = head ; 
+        while ( curr != NULL ) { 
+            int value = curr->val ; 
+            if ( answer.find(value) != answer.end() ) { 
+                prev->next = curr->next ; 
+                ListNode* del = curr ; 
+                curr = curr->next ; 
+                delete del ; 
+            }
+            else { 
+                prev = curr ; 
+                curr = curr->next ; 
+            }
+        }
+        dummy = dummy->next ; 
+        return dummy ; 
     }
 };
