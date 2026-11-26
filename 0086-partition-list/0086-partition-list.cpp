@@ -10,32 +10,30 @@
  */
 class Solution {
 public:
-    ListNode* partition(ListNode* head, int x) {; 
-        if ( head == NULL || head -> next == NULL ) { 
+    ListNode* partition(ListNode* head, int x) { 
+        if ( head == NULL || head->next == NULL ) { 
             return head ; 
         }
-        ListNode *first_dummy = new ListNode(0) ; 
-        ListNode *second_dummy = new ListNode(0) ; 
-        ListNode *first = first_dummy ; 
-        ListNode *second = second_dummy ;  
-        ListNode *temp = head ; 
-        first_dummy -> next = first ; 
-        second_dummy -> next = second ;
+        ListNode* lesser = new ListNode(-1) ; 
+        ListNode* greater = new ListNode(-1) ; 
+        ListNode* lesser_head = lesser ; 
+        ListNode* greater_head = greater ; 
+        ListNode* temp = head ; 
         while ( temp != NULL ) { 
-            ListNode *attach = temp -> next ;
-            if ( temp -> val < x ) { 
-                first -> next = temp ; 
-                first = first -> next ; 
+            if ( temp->val >= x ) { 
+                greater->next = temp ; 
+                greater = greater->next ; 
             }
             else { 
-                second -> next = temp ; 
-                second = second -> next ; 
+                lesser->next = temp ; 
+                lesser = lesser->next ; 
             }
-            attach = temp ;
-            temp = temp -> next ; 
-        } 
-        second -> next = NULL ;
-        first -> next = second_dummy -> next ; 
-        return first_dummy -> next ; 
+            temp = temp->next ; 
+        }
+        greater->next = NULL ; 
+        greater_head = greater_head->next ; 
+        lesser->next = greater_head ; 
+        lesser_head = lesser_head->next ; 
+        return lesser_head ; 
     }
 };
