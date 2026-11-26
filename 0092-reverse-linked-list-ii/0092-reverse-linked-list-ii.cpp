@@ -11,33 +11,43 @@
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
-        int position = 1 ; 
-        ListNode *current = head ; 
-        ListNode *prev = NULL ; 
-        if ( left == right ) { 
+        if ( head->next == NULL ) { 
             return head ; 
         }
-        while ( position < left ) { 
-            prev = current ; 
-            current = current -> next ; 
-            position++ ; 
-        }
-        ListNode *leftconn = prev ; 
-        ListNode *next = current -> next ; 
-        ListNode *rightconn = current ; 
-        while ( position <= right  ) {  
-            next = current -> next ; 
-            current -> next = prev ; 
-            prev = current ; 
-            current = next ; 
-            position++ ; 
-        }
+        ListNode* dummy = new ListNode(0) ; 
+        dummy->next = head ; 
+        ListNode* start = NULL ; 
+        ListNode* prev = NULL ; 
         if ( left == 1 ) { 
-            rightconn -> next = current ;
-            return prev ; 
+            start = head ; 
+            prev = dummy ; 
         }
-        leftconn -> next = prev ; 
-        rightconn -> next = current ;  
-        return head ; 
+        else { 
+            ListNode* temp = head ; 
+            for ( int i = 1 ; i < left - 1 ; i++ ) { 
+                temp = temp->next ; 
+            }
+            prev = temp ; 
+            start = temp->next ; 
+        } 
+        ListNode* prev_head = prev ; 
+        ListNode* start_head = start ; 
+        ListNode* end = NULL ; 
+        ListNode* temp = head ; 
+        for ( int i = 0 ; i < right - 1 ; i++ ) { 
+            temp = temp->next ; 
+        }
+        end = temp->next ; 
+        temp = start ; 
+        while ( temp != end ) { 
+            ListNode* nxt = temp->next ; 
+            temp->next = prev ; 
+            prev = temp ; 
+            temp = nxt ; 
+        }
+        prev_head->next = prev ; 
+        start_head->next = end ; 
+        dummy = dummy->next ; 
+        return dummy ; 
     }
 };
